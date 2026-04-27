@@ -2,7 +2,7 @@
 
 body{
     min-height: 100vh; /* ensure content takes up entire screen */
-    font-family: Be Vietnam Pro;
+    font-family: Be Vietnam Pro; /* setting up font */
 }
 
 .navbar {
@@ -12,18 +12,27 @@ body{
 
 .logo {
     position: absolute;
-  left: 50%;
+  left: 50%; /* centering logo */
   transform: translateX(-50%);
 }
 
 .navbar ul { /* nav bar alignment */
-    list-style: none;
-    display:flex;
-    justify-content: flex-end;
-    gap: 2%;
+    list-style: none; 
+    display:flex; /* make objects sit side by side */
+    justify-content: flex-end; /* position other content to right hand side */
+    gap: 2%; /* space conteent */
 }
 
 .navbar a {
-    text-decoration: none;
+    text-decoration: none; /* remove underline */
     color: black;
+}
+
+
+
+h1 {
+    font-family: antic-didone;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40%;
 }
