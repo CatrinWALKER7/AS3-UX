@@ -2,14 +2,20 @@ body{
     min-height: 100vh; /* ensure content takes up entire screen */
 }
 
-.navbarr {
-    width: 100%;
+.navbar {
+    margin-right: 10px;
+}
+
+
+.logo {
+    position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navbar ul { /* nav bar alignment */
     list-style: none;
     display:flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0; 
+    justify-content: flex-end;
+    gap: 2%;
 }
