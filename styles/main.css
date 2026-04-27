@@ -1,8 +1,15 @@
-*{
-    margin:  0;
-    padding: 0;
-}
-
 body{
     min-height: 100vh; /* ensure content takes up entire screen */
+}
+
+.navbarr {
+    width: 100%;
+}
+
+.navbar ul { /* nav bar alignment */
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0; 
 }
