@@ -28,11 +28,38 @@ body{
     color: black;
 }
 
+.hero {
+    min-height: 40vh; /* section will grow if needed content won't spill out */
+    padding: 80px 20px;
+    display: flex; /* make objects sit side by side */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("images/heroImage.png"); /* background of hero */ 
+    background-color: brown;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    color: white;
+  }
 
 
 h1 {
     font-family: antic-didone;
     font-weight: 400;
     font-style: normal;
-    font-size: 40%;
+    font-size: 15dvh;
+    color: white;
 }
+
+.heroContent h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .heroContent p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }  
+
+  
