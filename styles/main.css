@@ -25,26 +25,33 @@ body{
 
 .navbar a {
     text-decoration: none; /* remove underline */
-    color: black;
+    color: rgb(65, 16, 16);;
 }
 
 .hero {
-    min-height: 40vh; /* section will grow if needed content won't spill out */
     display: flex; /* make objects sit side by side */
     align-items: center;
     justify-content: flex-start;
     text-align: left;
-    background-color: brown;
-    background-size: cover;
-    background-position: center;
     padding: 0;
-    color: white;
+    color: rgb(65, 16, 16);;
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: 50% 70%
   }
 
   .heroContent {
+    position: absolute;
     margin-left: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    top: 10%;
   }
 
 
@@ -52,8 +59,8 @@ h1 {
     font-family: antic-didone;
     font-weight: 200;
     font-style: normal;
-    font-size: 120px;
-    color: white;
+    font-size: 80px;
+    color:rgb(65, 16, 16);;
 }
 
 .heroContent h1 {
@@ -71,10 +78,10 @@ h1 {
     margin-bottom: 20px;
     padding: 12px 28px;
   
-    background: transparent;
-    color: white;
+    background-color: white;
+    color: rgb(65, 16, 16);;
   
-    border: 1px solid white ;
+    border: 1px solid rgb(65, 16, 16); ;
     border-radius: 6px;
   
     font-family: "Be Vietnam Pro", sans-serif;
@@ -86,8 +93,9 @@ h1 {
   }
 
   button:hover { /* button hover effect */
-    background: rgb(65, 16, 16);
+    background-color: rgb(65, 16, 16); ;;
     color: white;
+    border: 1px solid rgb(65, 16, 16); ;;
   }
 
 /* promotion squares */
@@ -176,4 +184,8 @@ h1 {
 
   .furtherText {
     width: 40%;
+    text-align: center;
+    padding: 50px;
+    padding-right: 80px;
+    color: rgb(65, 16, 16) ;
   }
