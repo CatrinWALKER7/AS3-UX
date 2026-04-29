@@ -32,9 +32,8 @@ body{
     min-height: 40vh; /* section will grow if needed content won't spill out */
     display: flex; /* make objects sit side by side */
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
     text-align: left;
-    background-image: url("images/heroImage.png"); /* background of hero */ 
     background-color: brown;
     background-size: cover;
     background-position: center;
@@ -53,7 +52,7 @@ h1 {
     font-family: antic-didone;
     font-weight: 200;
     font-style: normal;
-    font-size: 15dvh;
+    font-size: 120px;
     color: white;
 }
 
@@ -113,7 +112,7 @@ h1 {
     right: 20px;
     font-family: "Be Vietnam Pro", sans-serif;
     color: white;
-    font-size: 80pt;
+    font-size: 80px;
     text-align: left;
     margin: 0;
   }
@@ -138,9 +137,36 @@ h1 {
     object-fit: cover;
   }
 
-  .FurtherInfo {
+
+  /* Further info section */
+  .FurtherInfo { /* gap between side-by-side columns */
     display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 80px 40px;
+    gap: 40px; 
+  }
+
+  .quizContent { /* hide overfill and size image */
+    height: 70vh;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .quizContent img { /* image behaves like a background */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .textOverlay { 
+    position: absolute;
+    top: 1%;
+    bottom: 5%;
+    left: 5%;
+    font-size: 50px;
+    color: white;
+    width: 40%;
+  }
+
+  .furtherText {
+    width: 40%;
   }
