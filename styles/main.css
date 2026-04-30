@@ -1,4 +1,8 @@
 
+:root {
+    --color: rgb(33, 5, 5);
+    --background-color: rgb(33, 5, 5);
+}
 
 body{
     min-height: 100vh; /* ensure content takes up entire screen */
@@ -25,7 +29,7 @@ body{
 
 .navbar a {
     text-decoration: none; /* remove underline */
-    color: rgb(65, 16, 16);;
+    color: var(--color);
 }
 
 .hero {
@@ -34,7 +38,7 @@ body{
     justify-content: flex-start;
     text-align: left;
     padding: 0;
-    color: rgb(65, 16, 16);;
+    color: var(--color);
     position: relative;
     overflow: hidden;
     height: 50vh;
@@ -50,8 +54,7 @@ body{
 
   .heroContent {
     position: absolute;
-    margin-left: 10%;
-    top: 10%;
+    margin-left: 2%;
   }
 
 
@@ -59,18 +62,19 @@ h1 {
     font-family: antic-didone;
     font-weight: 200;
     font-style: normal;
-    font-size: 80px;
-    color:rgb(65, 16, 16);;
+    font-size: 100pt;
+    color: var(--color);
 }
 
 .heroContent h1 {
-    margin-bottom: 0px;
-    margin-top: 0px;
+    padding: 0cm;
+    margin: 0;
   }
 
   .heroContent p {
     margin-bottom: 0px;
     margin-top: 0px;
+    padding: 0;
   }  
 
   button { /* button styling */
@@ -79,9 +83,9 @@ h1 {
     padding: 12px 28px;
   
     background-color: white;
-    color: rgb(65, 16, 16);;
+    color: var(--color);
   
-    border: 1px solid rgb(65, 16, 16); ;
+    border: 1px solid var(--color) ;
     border-radius: 6px;
   
     font-family: "Be Vietnam Pro", sans-serif;
@@ -93,9 +97,9 @@ h1 {
   }
 
   button:hover { /* button hover effect */
-    background-color: rgb(65, 16, 16); ;;
+    background-color: var(--background-color);
     color: white;
-    border: 1px solid rgb(65, 16, 16); ;;
+    border: 1px solid var(--color);
   }
 
 /* promotion squares */
@@ -110,7 +114,7 @@ h1 {
     aspect-ratio: 1 / 1; /* make square */
     position: relative;
     overflow: hidden;
-    background-color: rgb(65, 16, 16);
+    background-color: var(--background-color);
   }
 
   .card h3 { 
@@ -194,7 +198,7 @@ h1 {
     width: 40%;
     text-align: center;
     margin: 0;
-    color: rgb(65, 16, 16) ;
+    color: var(--color) ;
   }
 
   .furtherText p {
@@ -208,3 +212,17 @@ h1 {
     width: 60%;
     padding: 4rem;
   }
+
+  /* Footer styling */
+footer {
+    background-color: var(--background-color);
+    color: white;
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+    gap: 10%;
+}
+
+footer ul {
+    list-style: none;
+}
