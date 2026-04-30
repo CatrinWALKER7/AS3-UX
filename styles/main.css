@@ -116,11 +116,11 @@ h1 {
   .card h3 { 
     position: absolute;
     top: 20px;
-    left: 0px;
+    left: -6%;
     right: 20px;
     font-family: "Be Vietnam Pro", sans-serif;
     color: white;
-    font-size: 80px;
+    font-size: 90pt;
     text-align: left;
     margin: 0;
   }
@@ -177,8 +177,8 @@ h1 {
 
   .textOverlay { 
     position: absolute;
-    top: 5%;
-    left: 3%;
+    top: 2%;
+    left: 2%;
     font-size: 50px;
     line-height: 1.2;
     color: white;
@@ -193,12 +193,18 @@ h1 {
   .furtherText {
     width: 40%;
     text-align: center;
-    padding: 2rem;
     margin: 0;
     color: rgb(65, 16, 16) ;
   }
 
+  .furtherText p {
+    margin: 0;
+    margin-right: 20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .furtherText img {
-    width: 80%;
-    padding: 2rem;
+    width: 60%;
+    padding: 4rem;
   }
