@@ -233,3 +233,26 @@ h1 {
 
 
 /* PRODUCT LISTING */
+
+
+.quiz-product-listing {
+  padding-bottom: 2px;
+}
+
+.quiz-product-listing img { /* image behaves like a background */
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.textOverlay-two { 
+  position: absolute;
+  gap: 10%;
+  top: 10%;
+  left: 2%;
+  font-size: 25px;
+  line-height: 1.2;
+  color: white;
+  width: 100%;
+}
