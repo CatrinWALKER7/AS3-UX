@@ -236,7 +236,7 @@ h1 {
 
 
 .quiz-product-listing {
-  padding-bottom: 2px;
+  padding-bottom: 25px;
 }
 
 .quiz-product-listing img { /* image behaves like a background */
@@ -250,7 +250,7 @@ h1 {
   position: absolute;
   gap: 10%;
   top: 10%;
-  left: 2%;
+  padding-left: 4rem;
   font-size: 25px;
   line-height: 1.2;
   color: white;
