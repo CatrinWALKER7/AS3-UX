@@ -8,6 +8,8 @@
 body{
     min-height: 100vh; /* ensure content takes up entire screen */
     font-family: Be Vietnam Pro; /* setting up font */
+    padding-left: 0%;
+    margin-left: 0;
 }
 
 .navbar {
@@ -264,7 +266,7 @@ h1 {
   gap:5%;
   width: 100%;
   padding-left: 4rem;
-  padding-bottom: 15px;
   font-size: 20px;
+  margin-bottom: 15px;
 
 }
