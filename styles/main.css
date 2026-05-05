@@ -311,7 +311,15 @@ text-align: left;
 
 /* EMPTY CART PAGE */
 
+.empty-cart-response {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 4rem;
+}
+
 .empty-cart-alert { 
+  width: 60%;
   text-align: left;
   font-size: 20px;
   padding: 4rem;
@@ -322,4 +330,10 @@ text-align: left;
   color: var(--color);
   margin-bottom: 0;
   padding-bottom: 15px;
+}
+
+.empty-cart-suggestions {
+  width: 40%;
+  border: 1cm;
+  color: var(--color);
 }
