@@ -157,7 +157,7 @@ h1 {
     right: 20px;
     margin: 0;
     font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
   }
 
@@ -254,7 +254,7 @@ h1 {
   gap: 10%;
   top: 10%;
   padding-left: 4rem;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.2;
   color: white;
   width: 100%;
@@ -311,9 +311,15 @@ text-align: left;
 
 /* EMPTY CART PAGE */
 
+.empty-cart-alert { 
+  text-align: left;
+  font-size: 20px;
+  padding: 4rem;
+}
+
 .cart-empty {
-  text-align: center;
-  align-items: center;
-  font-size: 90pt;
+  font-size: 50px;
   color: var(--color);
+  margin-bottom: 0;
+  padding-bottom: 15px;
 }
