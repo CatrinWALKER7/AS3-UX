@@ -308,3 +308,12 @@ text-align: left;
   padding-left: 20px;
   padding-top: 2rem;
 }
+
+/* EMPTY CART PAGE */
+
+.cart-empty {
+  text-align: center;
+  align-items: center;
+  font-size: 90pt;
+  color: var(--color);
+}
