@@ -361,3 +361,23 @@ text-align: left;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+
+/* PRODUCT DETAILS */
+
+.product-details-descriptor {
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+
+.product-details-descriptor img {
+  width: 30%;
+  padding-bottom: 2rem;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+
+.product-details-descriptor h2 {
+  padding-bottom: 2rem;
+}
+
+
+
