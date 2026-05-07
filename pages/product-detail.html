@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="product-detail-body">
   <!-- Nav Bar -->
   <nav class="navbar">
     <ul>
@@ -51,6 +51,9 @@
     <button> Add to Cart </button>
 </div>
 
+<img class="bag-on-model" src="../images/Victoria with model.png">
+
+
 
 
 
@@ -59,12 +62,50 @@
 
 <section class="reccommendations">
     <h2> You may also like . . .</h2>
-    <div class="image-slideshow-horizontal">
-        <img src="../images/victoria bag.png" alt="A formal brown leather handbag with gold claspe details">
-        <img src="../images/victoria bag.png" alt="A formal brown leather handbag with gold claspe details">
-        <img src="../images/victoria bag.png" alt="A formal brown leather handbag with gold claspe details">
-        <img src="../images/victoria bag.png" alt="A formal brown leather handbag with gold claspe details">
-    </div>
+    <section class="product-grid">  <!-- All product cards -->
+
+        <a href="product-detail.html" class="product-link">
+            <div class="product-card">
+      
+                <img src="../images/victoria bag.png">
+          
+            <div class="product-card-text-details">
+          <p class="favourite"><i class="fa-regular fa-heart"></i></p>
+          <p class="product-name"> The Victoria Bag </p>
+          <p class="price"> $479.00 AUD </p>
+            </div>
+            </div>
+        </a> 
+      
+            <div class="product-card">
+      
+              <img src="../images/The Francia.png">
+              
+              <div class="product-card-text-details">
+              <p class="favourite"><i class="fa-regular fa-heart"></i></p>
+              <p class="product-name"> The Francia </p>
+              <p class="price"> $479.00 AUD </p>
+            </div>
+          
+              </div>
+      
+              <div class="product-card">
+      
+                <img src="../images/The Magnum.png">
+                
+                <div class="product-card-text-details">
+                <p class="favourite"><i class="fa-regular fa-heart"></i></p>
+                <p class="product-name"> The Magnum </p>
+                <p class="price"> $479.00 AUD </p>
+              </div>
+            
+                </div>
+
+    </section>
+      
+
+      
+
 
 
 </section>
@@ -87,7 +128,9 @@
       </ul>
     </div>
 
-</footer>
+  </footer>
+
+
 
 
 </body>
