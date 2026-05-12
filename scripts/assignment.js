@@ -1,3 +1,5 @@
+console.log ("JS LOADED")
+
 const products = {
     victoria: {
       name: "The Victoria Bag",
@@ -43,3 +45,10 @@ if (selectedProduct) {
 
   document.getElementById("slide-three").src = selectedProduct.imagethree;
 }
+
+
+const button = document.getElementById("add-to-cart");
+
+button.addEventListener("click", function () {
+  button.textContent = "Added";
+});

@@ -426,6 +426,13 @@ text-align: left;
   color: white;
 }
 
+.product-details-descriptor button:hover {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: var(--color);
+  color: white;
+}
+
 .reccommendations {
   margin-left: 4rem;
   margin-top: 4rem;
