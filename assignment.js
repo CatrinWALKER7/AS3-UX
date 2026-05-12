@@ -6,7 +6,7 @@ const products = {
       description: "Height 21cm, Width 27cm, Depth 10 cm",
       imageone: "../images/victoria-angle-1.png",
       imagetwo: "../images/victoria-angle-2.png",
-      imagethree: "../images/.png",
+      imagethree: "../images/victoria-angle-3.png",
 
     },
   
