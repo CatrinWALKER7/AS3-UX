@@ -37,6 +37,25 @@ body{
     color: var(--color);
 }
 
+
+.navbar span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--purchase);
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+}
+
+.cart-and-counter {
+  position: relative;
+}
+
   /* Footer styling */
   footer {
     background-color: var(--background-color);
