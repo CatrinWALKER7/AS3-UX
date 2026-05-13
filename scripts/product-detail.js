@@ -49,6 +49,11 @@ if (selectedProduct) {
 
 const button = document.getElementById("add-to-cart");
 
-button.addEventListener("click", function () {
-  button.textContent = "Added";
-});
+if (button) {
+  button.addEventListener("click", function () {
+
+    localStorage.setItem("cartProduct", productID);
+
+    button.textContent = "Added";
+  });
+}
