@@ -380,6 +380,7 @@ text-align: left;
 .product-details-descriptor img {
   width: 20rem;
   padding-bottom: 2rem;
+  object-fit: contain;
   filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 }
 
