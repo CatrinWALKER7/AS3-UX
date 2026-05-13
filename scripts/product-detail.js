@@ -1,4 +1,4 @@
-console.log ("JS LOADED")
+console.log ("listing page loaded")
 
 const products = {
     victoria: {
@@ -8,7 +8,7 @@ const products = {
       description: "Height 21cm, Width 27cm, Depth 10 cm",
       imageone: "../images/victoria-angle-1.png",
       imagetwo: "../images/victoria-angle-2.png",
-      imagethree: "../images/.png",
+      imagethree: "../images/victoria-angle-3.png",
 
     },
   
@@ -23,7 +23,7 @@ const products = {
     }
   };
 
-const params = new URLSearchParams(window.location.search);
+  const params = new URLSearchParams(window.location.search);
 
 const productID = params.get("product");
 
@@ -37,7 +37,7 @@ if (selectedProduct) {
 
   document.getElementById("main-image").src = selectedProduct.image;
 
-  document.getElementById("product-description").textContent = selectedProduct.description;
+  //document.getElementById("product-description").textContent = selectedProduct.description;
 
   document.getElementById("slide-one").src = selectedProduct.imageone;
 
