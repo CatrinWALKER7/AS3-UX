@@ -493,5 +493,27 @@ text-align: left;
   grid-template-rows: 70px 1fr 70px;
 }
 
+.cart-slide h2 {
+  padding: 20px;
+  margin: 0;
+}
+
+.entry-and-exit {
+  display: grid ;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+}
+
+.entry-and-exit button{
+  background-color: var(--purchase);
+  color: white;
+  cursor: pointer;
+}
+
+.entry-and-exit button:hover {
+  background-color: var(--background-color);
+  color: white;
+}
+
 
 
