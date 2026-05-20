@@ -46,36 +46,5 @@ if (selectedProduct) {
   document.getElementById("slide-three").src = selectedProduct.imagethree;
 }
 
-//cart slide in 
-
-const button = document.getElementById("add-to-cart");
-
-if (button) {
-  button.addEventListener("click", function () {
-
-    localStorage.setItem("cartProduct", productID);
-
-    button.textContent = "Added";
-  });
-}
-
-const cartCounter = document.querySelector('.cart-and-counter');
-
-const body = document.body;
-let produtListHtml = document.querySelector('.product-list');
-let productList = [];
-
-const closeButton = document.querySelector('.close-slide-in');
-
-
-//show and hide cart 
-cartCounter.addEventListener('click', () => {
-  body.classList.add('show-cart');
-});
-
-
-closeButton.addEventListener('click', () => {
-  body.classList.remove('show-cart');
-});
 
 
