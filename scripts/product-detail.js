@@ -1,4 +1,4 @@
-console.log ("listing page loaded")
+//go to product details from product page
 
 const products = {
     victoria: {
@@ -46,6 +46,7 @@ if (selectedProduct) {
   document.getElementById("slide-three").src = selectedProduct.imagethree;
 }
 
+//cart slide in 
 
 const button = document.getElementById("add-to-cart");
 
@@ -61,11 +62,13 @@ if (button) {
 const cartCounter = document.querySelector('.cart-and-counter');
 
 const body = document.body;
+let produtListHtml = document.querySelector('.product-list');
+let productList = [];
 
 const closeButton = document.querySelector('.close-slide-in');
 
 
-
+//show and hide cart 
 cartCounter.addEventListener('click', () => {
   body.classList.add('show-cart');
 });
@@ -74,3 +77,5 @@ cartCounter.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
   body.classList.remove('show-cart');
 });
+
+

@@ -489,7 +489,7 @@ body.show-cart .cart-slide {
 
 .cart-slide {
   width: 30rem;
-  background-color: var(--color);
+  background-color: rgba(195, 192, 192, 0.704);
   color: white;
   position: fixed;
   inset: 0 -30rem 0 auto;
