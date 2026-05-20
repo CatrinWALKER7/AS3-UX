@@ -483,14 +483,18 @@ text-align: left;
 
 /* PRODUCT DETAILS - CART SLIDE IN */
 
+body.show-cart .cart-slide {
+  inset: 0 0 0 auto; 
+}
+
 .cart-slide {
-  width: 380px;
+  width: 30rem;
   background-color: var(--color);
   color: white;
   position: fixed;
-  inset: 0 0 0 0;
+  inset: 0 -30rem 0 auto;
   display: grid;
-  grid-template-rows: 70px 1fr 70px;
+  grid-template-rows: 70px auto 120px;
 }
 
 .cart-slide h2 {
@@ -502,6 +506,7 @@ text-align: left;
   display: grid ;
   grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
+  margin-bottom: 40px;
 }
 
 .entry-and-exit button{
@@ -515,5 +520,36 @@ text-align: left;
   color: white;
 }
 
+/* PRODUCT DETAILS - CART SLIDE IN - PRODUCT ITEM */
 
 
+.cart-slide .item-list .item img{
+  width: 100%;
+}
+
+.cart-slide .item-list .item {
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.item-list .cart-items-quantity span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: var(--color);
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.item-list .item:nth-child(even){
+  background-color: rgb(66, 51, 51);
+}
+
+.item-list {
+  overflow: auto;
+}

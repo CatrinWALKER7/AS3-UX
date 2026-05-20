@@ -1,5 +1,3 @@
-console.log ("listing page loaded")
-
 const products = {
     victoria: {
       name: "The Victoria Bag",
@@ -23,7 +21,7 @@ const products = {
     }
   };
 
-  const params = new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 
 const productID = params.get("product");
 
@@ -37,7 +35,7 @@ if (selectedProduct) {
 
   document.getElementById("main-image").src = selectedProduct.image;
 
-  //document.getElementById("product-description").textContent = selectedProduct.description;
+  document.getElementById("product-description").textContent = selectedProduct.description;
 
   document.getElementById("slide-one").src = selectedProduct.imageone;
 
@@ -45,32 +43,3 @@ if (selectedProduct) {
 
   document.getElementById("slide-three").src = selectedProduct.imagethree;
 }
-
-
-const button = document.getElementById("add-to-cart");
-
-if (button) {
-  button.addEventListener("click", function () {
-
-    localStorage.setItem("cartProduct", productID);
-
-    button.textContent = "Added";
-  });
-}
-
-const cartCounter = document.querySelector('.cart-and-counter');
-
-const body = document.body;
-
-const closeButton = document.querySelector('.close-slide-in');
-
-
-
-cartCounter.addEventListener('click', () => {
-  body.classList.add('show-cart');
-});
-
-
-closeButton.addEventListener('click', () => {
-  body.classList.remove('show-cart');
-});
