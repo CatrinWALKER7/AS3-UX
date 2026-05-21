@@ -21,9 +21,9 @@ const products = {
       imagetwo: "../images/victoria-angle-2.png",
       imagethree: "../images/victoria-angle-3.png",
     }
-  };
+};
 
-  const params = new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 
 const productID = params.get("product");
 
@@ -31,19 +31,19 @@ const selectedProduct = products[productID];
 
 if (selectedProduct) {
 
-  document.getElementById("product-name").textContent = selectedProduct.name;
+    document.getElementById("product-name").textContent = selectedProduct.name;
 
-  document.getElementById("product-price").textContent = selectedProduct.price;
+    document.getElementById("product-price").textContent = selectedProduct.price;
 
-  document.getElementById("main-image").src = selectedProduct.image;
+    document.getElementById("main-image").src = selectedProduct.image;
 
-  //document.getElementById("product-description").textContent = selectedProduct.description;
+    //document.getElementById("product-description").textContent = selectedProduct.description;
 
-  document.getElementById("slide-one").src = selectedProduct.imageone;
+    document.getElementById("slide-one").src = selectedProduct.imageone;
 
-  document.getElementById("slide-two").src = selectedProduct.imagetwo;
+    document.getElementById("slide-two").src = selectedProduct.imagetwo;
 
-  document.getElementById("slide-three").src = selectedProduct.imagethree;
+    document.getElementById("slide-three").src = selectedProduct.imagethree;
 }
 
 
