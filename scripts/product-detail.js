@@ -3,23 +3,24 @@
 const products = {
     victoria: {
       name: "The Victoria Bag",
-      price: "$479.00 AUD",
+      price: 479,
       image: "../images/victoria bag.png",
       description: "Height 21cm, Width 27cm, Depth 10 cm",
       imageone: "../images/victoria-angle-1.png",
       imagetwo: "../images/victoria-angle-2.png",
       imagethree: "../images/victoria-angle-3.png",
-
+      quantity: 1,
     },
   
     miami: {
       name: "The Miami Bag",
-      price: "$399.00 AUD",
+      price: 399,
       image: "../images/The Miami.png",
       description: "Height 25cm <br> Width 30cm <br> Depth 12 cm",
       imageone: "../images/victoria-angle-1.png",
       imagetwo: "../images/victoria-angle-2.png",
       imagethree: "../images/victoria-angle-3.png",
+      quantity: 1,
     }
 };
 
@@ -33,7 +34,7 @@ if (selectedProduct) {
 
     document.getElementById("product-name").textContent = selectedProduct.name;
 
-    document.getElementById("product-price").textContent = selectedProduct.price;
+    document.getElementById("product-price").textContent = "$ " + selectedProduct.price + ".00 AUD";
 
     document.getElementById("main-image").src = selectedProduct.image;
 

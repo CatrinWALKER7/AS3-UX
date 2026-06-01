@@ -60,8 +60,8 @@
         </div>
     </div>
 
-    <p id="product-price"></p>
-    <button id="add-to-cart"> Add to Cart </button>
+   <p id="product-price"></p>
+    <button id="add-to-cart" onclick="loadCart()"> Add to Cart </button>
 </div>
 
 <img class="bag-on-model" src="../images/Victoria with model.png">
@@ -123,29 +123,8 @@
 <div class="cart-slide">
     <h2> Your Cart </h2>
 
-    <div class="item-list">
-        <div class="item">
-
-            <div class="cart-item-image">
-                <img src="../images/victoria bag.png">
-            </div>
-
-            <div class="cart-item-name">
-                <p>Bag Name</p>
-            </div>
-
-            <div class="cart-item-price">
-                <p>$0000</p>
-            </div>
-
-            <div class="cart-items-quantity">
-                <span class="minus">-</span>
-                <span> 1 </span>
-                <span class="plus">+</span>
-            </div>
-
-            
-        </div>
+    <div class="item-list" id="item-list">
+        
 
     </div>
 
