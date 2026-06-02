@@ -1,5 +1,6 @@
 //go to product details from product page
 
+
 const products = {
     victoria: {
       name: "The Victoria Bag",
@@ -25,9 +26,7 @@ const products = {
 };
 
 const params = new URLSearchParams(window.location.search);
-
 const productID = params.get("product");
-
 const selectedProduct = products[productID];
 
 if (selectedProduct) {
