@@ -54,7 +54,7 @@ function loadCart() {
         html += 
        `<div class="item" data-index="${index}">
             <div class="cart-item-image">
-                <img src=${item.image}>
+                <img src="${item.image}">
             </div>
 
             <div class="cart-item-name">

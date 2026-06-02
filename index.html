@@ -16,7 +16,7 @@
   <nav class="navbar">
     <ul>
             <li class="logo"> 
-                <a href="../index.html"> Here Bags </a>
+                <a href="index.html"> Here Bags </a>
             </li>
 
             <li>
@@ -28,10 +28,12 @@
             </li>
             
             <li>
-                <div class="cart-and-counter">
+                <div class="cart-and-counter" onclick="showCart()">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <span> 0 </span>
                 </div>
+
+                
             </li>
         </ul>
   </nav> 
@@ -43,7 +45,7 @@
       <h1>HERE</h1>
       <p>Conscious Luxury, Crafted for You</p>
       <h1>BAGS</h1>
-      <button class="shopNow">Shop Now</button>
+      <button class="shopNow" onclick="window.location.href='pages/products.html'">Shop Now</button>
     </div>
   </section>
 
@@ -113,8 +115,19 @@
     </div>
 
   </footer>
+  
+  <div class="cart-slide">
+    <h2> Your Cart </h2>
 
-  <script src="scripts/product-detail.js"></script>
+    <div class="item-list" id="item-list">
+    </div>
+
+    <div class="entry-and-exit">
+        <button class="close-slide-in">Continue Shopping</button>
+        <button class="go-to-checkout">Visit Cart</button>
+    </div>
+</div>
+  
   <script src="scripts/cart.js"></script>
 </body>
 </html>
