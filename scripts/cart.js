@@ -23,8 +23,17 @@ closeButton.addEventListener ('click', () => {
 
 if (buttonAdd) {
     buttonAdd.addEventListener('click', () => {
-        console.log(selectedProduct);
-        cart.push({...selectedProduct, quantity:1});
+        
+        const existingItem = cart.find(item => item.name === selectedProduct.name);
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({...selectedProduct,quantity:1});
+        }
+    
+       
+      
+        
         localStorage.setItem('cart',JSON.stringify(cart));
         buttonAdd.textContent="Added";
         cartCount.textContent= cart.length;

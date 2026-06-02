@@ -318,14 +318,9 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 0.5px solid rgba(60, 4, 4, 0.163)
 } 
 
-.product-card img {
-  
-    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 
-}
 
 .product-card-text-details {
 align-items: flex-start;
@@ -338,7 +333,10 @@ text-align: left;
   object-fit: contain;
   display: block;
   margin: 0;
-  padding:0
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: 15rem;
+  background-color: rgba(60, 4, 4, 0.163);
   
 }
 
@@ -405,7 +403,6 @@ text-align: left;
   width: 20rem;
   padding-bottom: 2rem;
   object-fit: contain;
-  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 }
 
 .product-details-descriptor h2 {
@@ -477,7 +474,7 @@ text-align: left;
   width: 20%;
 }
 
-.bag-on-model {
+#bag-on-model {
   width: 30%;
   margin-left: 4rem;
   border-radius: 60rem;

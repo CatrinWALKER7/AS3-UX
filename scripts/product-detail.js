@@ -11,6 +11,7 @@ const products = {
       imagetwo: "../images/victoria-angle-2.png",
       imagethree: "../images/victoria-angle-3.png",
       quantity: 1,
+      model: "../images/Victoria with model.png",
     },
   
     miami: {
@@ -18,10 +19,11 @@ const products = {
       price: 399,
       image: "../images/The Miami.png",
       description: "Height 25cm <br> Width 30cm <br> Depth 12 cm",
-      imageone: "../images/victoria-angle-1.png",
-      imagetwo: "../images/victoria-angle-2.png",
-      imagethree: "../images/victoria-angle-3.png",
+      imageone: "../images/sideAngleMiami.png",
+      imagetwo: "../images/bagWstrap.png",
+      imagethree: "../images/womanw:miami.png",
       quantity: 1,
+      model: "../images/womanw:miami.png",
     }
 };
 
@@ -44,6 +46,8 @@ if (selectedProduct) {
     document.getElementById("slide-two").src = selectedProduct.imagetwo;
 
     document.getElementById("slide-three").src = selectedProduct.imagethree;
+
+    document.getElementById("bag-on-model").src = selectedProduct.model
 }
 
 
