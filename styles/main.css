@@ -9,6 +9,8 @@ html {
     --color: rgb(33, 5, 5);
     --background-color: rgb(33, 5, 5);
     --purchase: rgb(146, 1, 1);
+    --bodyfonts: Be Vietnam Pro;
+    --titlefonts: antic-didone;
 }
 
 body{
@@ -337,8 +339,14 @@ text-align: left;
   padding-bottom: 4rem;
   border-radius: 15rem;
   background-color: rgba(60, 4, 4, 0.163);
-  
+  transition: transform 0.3s ease;
 }
+
+.product-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
 
 .category {
   font-size: 20px;
@@ -555,6 +563,23 @@ body.show-cart .cart-slide {
 .item-list {
   overflow: auto;
 }
+
+/* CART PAGE*/
+.cart-page {
+  padding: 4rem;
+}
+
+.cart-page h1 {
+  font-family: var(--titlefonts);
+}
+
+.cart-item-image img {
+  width: 30%;
+}
+
+
+
+/* MOBILE RESPOSIVE */
 
 @media (max-width: 380px) {
   .navbar {
