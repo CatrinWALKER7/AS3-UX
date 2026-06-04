@@ -69,3 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCart();
 
 });
+
+//loading the form 
+const checkoutBtn = document.querySelector()
+const checkoutForm = document.querySelector('.chekout-form')
+const submitBtn = document.querySelector 

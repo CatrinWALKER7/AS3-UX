@@ -621,6 +621,18 @@ body.show-cart .cart-slide {
   border-radius: 5rem;
 }
 
+/* CART PAGE - FORM VALIDATION */
+
+.checkout-form {
+  display: none;
+  padding: 2rem;
+}
+
+.checkout-form.active {
+  display:block;
+}
+
+
 
 /* MOBILE RESPOSIVE */
 
