@@ -618,10 +618,27 @@ body.show-cart .cart-slide {
   padding-left: 4rem;
   background-color: var(--purchase);
   color: white;
-  border-radius: 5rem;
+  border-radius: 6px;
 }
 
 /* CART PAGE - FORM VALIDATION */
+.checkout-form {
+  width: 70%;
+}
+
+.checkout-form input {
+  width: 100%;
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  font-family: var(--bodyfonts);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.checkout-form input:focus {
+  border: 2px solid var(--purchase)
+}
 
 .checkout-form {
   display: none;
@@ -630,6 +647,20 @@ body.show-cart .cart-slide {
 
 .checkout-form.active {
   display:block;
+}
+
+.confirmation-box {
+  background-color: rgba(67, 28, 28, 0.083);
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.confirmation-box h2, p, button{
+  margin-left: 2rem;
+}
+
+.confirmation-box h2{
+  font-size: 50px;
 }
 
 

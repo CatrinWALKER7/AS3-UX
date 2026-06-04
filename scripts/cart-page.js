@@ -68,9 +68,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderCart();
 
+
+
+//loading the form, makes form appear & takes you to form
+const checkoutBtn = document.querySelector('.go-to-checkout');
+const checkoutForm = document.querySelector('.checkout-form');
+const submitBtn = document.querySelector ('.order-confirmation');
+const confirmBtn = document.querySelector('.order-confirmation');
+
+checkoutBtn.addEventListener('click', () => {
+    checkoutForm.classList.add('active'); //add active css class onto form 
+    checkoutForm.scrollIntoView({behavior: 'smooth'});
 });
 
-//loading the form 
-const checkoutBtn = document.querySelector()
-const checkoutForm = document.querySelector('.chekout-form')
-const submitBtn = document.querySelector 
+//confirming form entry 
+
+confirmBtn.addEventListener ('click', () => {
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone-number').value;
+    const address = document.getElementById('address').value;
+
+    if (!name || !email || !phone || !address) {
+        alert('Please make sure you have filled in all fields');
+        return;
+    }
+    
+    //clearing cart 
+    cart = [];
+    localStorage.removeItem('cart');
+    cartCount.textContent=0;
+    renderCart();
+    
+    //show confirmation message 
+    checkoutForm.innerHTML = `
+    <div class="confirmation-box">
+        <h2>Order Confirmed!</h2>
+        <p>Thank you ${name}, we hope you enjoy your bag!</p>
+        <button onclick="window.location.href='../index.html'">Continue Shopping</button>
+    </div>
+`;
+});
+
+
+renderCart();
+});
+
