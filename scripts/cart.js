@@ -13,6 +13,8 @@ function showCart(){
     loadCart();
 }
 
+document.querySelector('.cart-and-counter').addEventListener('click', showCart);
+
 //cart close
 closeButton.addEventListener ('click', () => {
     body.classList.remove ('show-cart');
@@ -31,8 +33,6 @@ if (buttonAdd) {
             cart.push({...selectedProduct,quantity:1});
         }
     
-       
-      
         
         localStorage.setItem('cart',JSON.stringify(cart));
         buttonAdd.textContent="Added";
@@ -41,7 +41,12 @@ if (buttonAdd) {
     });
 }
     
-
+function fixImagePath (imagePath) {
+    if (!window.location.pathname.includes('/pages')) {
+        return imagePath.replace('../', '');
+    }
+    return imagePath;
+}
 
 function loadCart() {
     cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -54,7 +59,7 @@ function loadCart() {
         html += 
        `<div class="item" data-index="${index}">
             <div class="cart-item-image">
-                <img src="${item.image}">
+                <img src="${fixImagePath(item.image)}">
             </div>
 
             <div class="cart-item-name">
