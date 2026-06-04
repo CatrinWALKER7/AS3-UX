@@ -18,18 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="cart-item-image">
                     <img src="${item.image}">
                 </div>
-                <div class="cart-item-name">
-                    <p>${item.name}</p>
+                <div class="cart-item-details">
+                    <div class="cart-item-name">
+                        <p>${item.name}</p>
+                    </div>
+                    <div class="cart-item-price">
+                        <p>$${item.price * item.quantity}</p>
+                    </div>
+                    <div class="cart-items-quantity">
+                        <span class="minus" data-index="${index}">-</span>
+                        <span>${item.quantity}</span>
+                        <span class="plus" data-index="${index}">+</span>
+                    </div>
                 </div>
-                <div class="cart-item-price">
-                    <p>$${item.price * item.quantity}</p>
-                </div>
-                <div class="cart-items-quantity">
-                    <span class="minus" data-index="${index}">-</span>
-                    <span>${item.quantity}</span>
-                    <span class="plus" data-index="${index}">+</span>
-                </div>
-            </div>`;
+            </div>`;          
         });
 
         itemList.innerHTML = html;
