@@ -3,6 +3,7 @@
 
 html {
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 :root {
@@ -59,8 +60,56 @@ body{
   right: -20px;
 }
 
+
 .cart-and-counter {
   position: relative;
+}
+
+/* Hamburger nav bar */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  }
+
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    gap: 2rem;
+    list-style: none;
+    border-top: var(--color);
+    position: fixed;
+    top: 55px;
+    left: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 998;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .mobile-nav a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 16px;
+  }
+
+  .mobile-nav li {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-nav .logo {
+    position: static;   
+    transform: none;     
 }
 
   /* Footer styling */
@@ -74,7 +123,7 @@ body{
     gap: 10%;
     width: 100%;
     margin-left: 0;
-}
+  }
 
 footer ul {
     list-style: none;
@@ -667,8 +716,22 @@ body.show-cart .cart-slide {
 
 /* MOBILE RESPOSIVE */
 
-@media (max-width: 380px) {
-  .navbar {
+@media (max-width: 391px) { 
+ 
+  .navbar > ul { /* make nav bar disappear */
     display: none;
   }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+    padding: 8px;
+    z-index: 9999;
+  }
+
+
+
 }

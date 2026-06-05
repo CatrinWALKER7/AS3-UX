@@ -112,5 +112,13 @@ function updateCart() {
 
 }
 
+// Nav Bar on mobile view 
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobile-nav')
 
+if (hamburger) {
+    hamburger.addEventListener ('click', () => {
+        mobileNav.classList.toggle('active');
+    })
+}
 
