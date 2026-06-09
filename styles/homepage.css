@@ -1,0 +1,181 @@
+.hero {
+    display: flex; /* make objects sit side by side */
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0;
+    color: var(--color);
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    height: 50vh;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: 50% 70%
+  }
+
+  .heroContent {
+    position: absolute;
+    margin-left: 2%;
+  }
+
+
+h1 {
+    font-family: antic-didone;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 100pt;
+    color: var(--color);
+}
+
+.heroContent h1 {
+    padding: 0cm;
+    margin: 0;
+  }
+
+  .heroContent p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0;
+  }  
+
+  button { /* button styling */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 12px 28px;
+  
+    background-color: white;
+    color: var(--color);
+  
+    border: 1px solid var(--color) ;
+    border-radius: 6px;
+  
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  button:hover { /* button hover effect */
+    background-color: var(--background-color);
+    color: white;
+    border: 1px solid var(--color);
+  }
+
+/* promotion squares */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* create 4 columns */
+    gap: 20px;
+    padding: 60px 5px;
+  }
+
+  .card {
+    aspect-ratio: 1 / 1; /* make square */
+    position: relative;
+    overflow: hidden;
+    background-color: var(--background-color);
+  }
+
+  .card h3 { 
+    position: absolute;
+    top: 20px;
+    left: -6%;
+    right: 20px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: white;
+    font-size: 90pt;
+    text-align: left;
+    margin: 0;
+  }
+
+  .card p {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    margin: 0;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+
+.callOns {
+    display: flex;
+    position: absolute;
+    gap: 8px;
+    bottom: 4%;
+    left: 4%;
+}
+
+
+  .photoCard img {
+    aspect-ratio: 1 / 1; /* make square */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* Further info section */
+  .FurtherInfo { /* gap between side-by-side columns */
+    display: flex;
+    gap: 40px; 
+  }
+
+  .quizContent { /* hide overfill and size image */
+    height: 70vh;
+    width: 60%;
+    flex-shrink: 0; /* prevent resizing */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .quizContent img { /* image behaves like a background */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .textOverlay { 
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    width: 40%;
+  }
+
+  .textOverlay h2{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .furtherText {
+    width: 40%;
+    text-align: center;
+    margin: 0;
+    color: var(--color) ;
+  }
+
+  .furtherText p {
+    margin: 0;
+    margin-right: 20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .furtherText img {
+    width: 60%;
+    padding: 4rem;
+  }
