@@ -1,3 +1,15 @@
+// Nav Bar on mobile view 
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobile-nav')
+
+if (hamburger) {
+    hamburger.addEventListener ('click', () => {
+        mobileNav.classList.toggle('active');
+    })
+}
+
+
+//Cart Slide in 
 const closeButton = document.querySelector ('.close-slide-in');
 const body = document.body;
 const cartCount = document.querySelector('.cart-and-counter span');
@@ -10,6 +22,7 @@ cartCount.textContent = cart.length;
 //function for opening cart
 function showCart(){
     body.classList.add('show-cart');
+    if (mobileNav) mobileNav.classList.remove('active');
     loadCart();
 }
 
@@ -112,13 +125,5 @@ function updateCart() {
 
 }
 
-// Nav Bar on mobile view 
-const hamburger = document.getElementById('hamburger');
-const mobileNav = document.getElementById('mobile-nav')
 
-if (hamburger) {
-    hamburger.addEventListener ('click', () => {
-        mobileNav.classList.toggle('active');
-    })
-}
 
