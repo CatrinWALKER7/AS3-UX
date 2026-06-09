@@ -782,12 +782,13 @@ body.show-cart .cart-slide {
     padding: 0;
   }
 
-  .cart-items-quantity {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    padding-bottom: 1px;
+  .cart-page .cart-items-quantity,
+  .cart-slide .cart-items-quantity {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 1rem;
   }
 
   .cart-item-name p, .cart-item-price p{
@@ -801,10 +802,6 @@ body.show-cart .cart-slide {
     padding: 0;
     padding-bottom: 1px;
   }
-
-  .cart-items-quantity {
-    padding-bottom: 1rem; 
-}
 
   /* Homepage responsive */
 
