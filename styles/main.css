@@ -19,10 +19,12 @@ body{
     font-family: Be Vietnam Pro; /* setting up font */
     padding-left: 0%;
     margin-left: 0;
+    color: var(--color);
 }
 
 .navbar {
     margin-right: 10px;
+    color: var(--color);
 }
 
 
@@ -240,6 +242,8 @@ body.show-cart .cart-slide {
 .item-list {
   overflow: auto;
 }
+
+
 
 
 
