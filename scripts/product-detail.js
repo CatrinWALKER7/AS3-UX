@@ -47,8 +47,26 @@ if (selectedProduct) {
 
     document.getElementById("slide-three").src = selectedProduct.imagethree;
 
-    document.getElementById("bag-on-model").src = selectedProduct.model
+    document.getElementById("bag-on-model").src = selectedProduct.model;
 }
 
+const furtherDetailItems = document.querySelectorAll ('.further-detail-item');
+
+furtherDetailItems.forEach((item,index) => {
+  item.addEventListener('click', () => { 
+  const texts = document.querySelectorAll('.detail-text');
+  const icon = item.querySelector('i');
+
+  texts[index].classList.toggle('active');
+
+  if (texts[index].classList.contains('active')) {
+    icon.classList.remove('fa-plus');
+    icon.classList.add('fa-minus');
+  }else {
+    icon.classList.remove('fa-minus');
+    icon.classList.add('fa-plus');
+  }
+});
+})
 
 

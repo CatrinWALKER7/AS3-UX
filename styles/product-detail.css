@@ -44,12 +44,24 @@
   
   .further-detail-item {
     border-bottom: 1px solid var(--color);
-    margin-bottom: 4rem;
     padding-bottom: 1rem;
-    margin-bottom: 5rem;
     display: flex;
-    gap: 10rem;
-    
+    justify-content: space-between;
+  }
+
+  .further-detail-item p {
+    padding-right: 1rem;
+  }
+
+  .detail-text {
+    display: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--color);
+  }
+
+  .detail-text.active {
+    display: block;
   }
   
   .product-details-descriptor button {
