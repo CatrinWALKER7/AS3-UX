@@ -3,10 +3,15 @@
 .cart-page {
     padding: 2rem;
   }
-  
-  .cart-page h1 {
-    font-family: var(--bodyfonts);
+
+  .cart-page h1, p, h2, h3 {
+    color: var(--color);
   }
+
+  .cart-page-total p {
+    color: white;
+  }
+  
   
   .cart-page .item { 
     display: flex;
@@ -78,31 +83,57 @@
   }
   
   /* CART PAGE - FORM VALIDATION */
-  .checkout-form {
-    width: 70%;
-  }
-  
+
   .checkout-form input {
-    width: 100%;
+    width: 50%;
     border: 2px solid var(--color);
     border-radius: 6px;
     font-family: var(--bodyfonts);
-    font-size: 2rem;
+    font-size: 1rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     outline: none;
   }
+
+  .checkout-form select {
+    width: 50%;
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    font-family: var(--bodyfonts);
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    appearance: none;
+  }
+
+  .state {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
   
   .checkout-form input:focus {
+    border: 2px solid var(--purchase)
+  }
+
+  .checkout-form select:focus {
     border: 2px solid var(--purchase)
   }
   
   .checkout-form {
     display: none;
     padding: 2rem;
+    background-color: rgba(67, 28, 28, 0.083);;
   }
   
   .checkout-form.active {
     display:block;
+  }
+
+  .checkout-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
   
   .confirmation-box {
@@ -117,6 +148,10 @@
   
   .confirmation-box h2{
     font-size: 50px;
+  }
+
+  .order-confirmation {
+    margin-left: 0;
   }
   
   

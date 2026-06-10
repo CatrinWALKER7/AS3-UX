@@ -301,18 +301,19 @@
   }
   
   .checkout-form {
-    width: 80%;
+    width: 100%;
     padding: 1rem;
   }
   
-  .checkout-form input {
+  .checkout-form input,
+  .checkout-form select {
     font-size: 14px;
-    margin-left: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .order-confirmation {
     width: 100%;
-    margin-left: 1rem;
   
   }
   

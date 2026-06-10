@@ -76,33 +76,89 @@
   </section>
 
   <section class="checkout-form"> 
+    <h2> Checkout Form </h2>
     <form>
-      <div class="input">
-        <input type="text" 
-        class="name" 
-        placeholder="Name" 
-        id="name"/>
+
+      <div class="contact-info">
+        <h3> Contact Information</h3>
+          <div class="input">
+            <input type="text" 
+            class="name" 
+            placeholder="Name" 
+            id="name"/>
+          </div>
+
+          <div class="input">
+            <input type="email" 
+            class="email" 
+            placeholder="Email Address" 
+            id="email"/>
+          </div>
+
+          <div class="input">
+            <input type="tel" 
+            class="phone-number" 
+            placeholder="Phone Number" 
+            id="phone-number" maxlength="10"/>
+          </div>
+
       </div>
 
-      <div class="input">
-        <input type="email" 
-        class="email" 
-        placeholder="Email Address" 
-        id="email"/>
+      <div class="delivery-info">
+        <h3> Delivery Information</h3>
+        
+        <div class="input">
+          <input type="text" 
+          class="address" placeholder="Street Address" 
+          id="address"/>
+        </div>
+
+        <div class="input">
+          <input type="tel" 
+          class="postcode" placeholder="Postcode" 
+          id="postcode"/>
+        </div>
+
+        <div class="state">
+          <label for="state-selector"> State : </label>
+          <select class="input" id="state-selector"> 
+            <option> Select State </option>
+            <option> Australian Capital Territory </option>
+            <option> New South Wales </option>
+            <option> Northern Territory </option>
+            <option> Queensland </option>
+            <option> South Australia </option>
+            <option> Tasmania </option>
+            <option> Victoria </option>
+            <option> Western Australia </option>
+          </select>
+        </div>
+
       </div>
 
-      <div class="input">
-        <input type="number" 
-        class="phone-number" 
-        placeholder="Phone Number" 
-        id="phone-number"/>
+      <div class="payment">
+        <h3>Payment Information</h3>
+
+        <div class="input">
+          <input type="tel" 
+          class="card-number" placeholder="Card Number" 
+          id="card-number" maxlength="19"/>
+        </div>
+
+        <div class="input">
+          <input type="tel" 
+          class="expiry" placeholder="MM/YY" 
+          id="expiry" maxlength="5"/>
+        </div>
+
+        <div class="input">
+          <input type="tel" 
+          class="cvc" placeholder="CVC" 
+          id="cvc" maxlength="3"/>
+        </div>
+
       </div>
 
-      <div class="input">
-        <input type="text" 
-        class="address" placeholder="Address" 
-        id="address"/>
-      </div>
 
       <button class="order-confirmation"> Confirm Order </button>
 
